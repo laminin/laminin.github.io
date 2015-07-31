@@ -1,0 +1,31 @@
+# Site settings
+title: "Laminin"
+email: franklin2412@gmail.com
+description: "Hi, This is franklin. - son, student, software engineer -.  Laminin is my blog. I blog about anything i found interesting!."
+baseurl: ""
+url: "http://laminin.github.io/"
+title_description: "Hi, This is franklin. - son, student, software engineer -.  Laminin is my blog. I blog about anything i found interesting while reading or doing."
+title_image: "http://www.gravatar.com/avatar/00000000000000000000000000000000?s=500&d=mm"
+# google_analytics: "UA-20365477-4"
+# disqus_account: cartenoire
+github_repository: https://github.com/laminin/laminin.github.io
+# addthis_id: ra-513c6fa83da6ec67
+post_limit: 5
+
+# Social usernames/URLs
+twitter_username: chenapalliFrank
+github_username:  Franklin2412
+# linkedin_link: http://carte-noire.jacobtomlinson.co.uk/
+# google_plus_link: http://carte-noire.jacobtomlinson.co.uk/
+stackoverflow_link: http://stackoverflow.com/users/3859546/hspector
+
+# Footer
+footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/chenapalliFrank\">Franklin</a>"
+footer_right: "&lt;/&gt; on <a href=\"https://github.com/Franklin2412\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+
+# Build settings
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+permalink: pretty
+exclude: [vendor]

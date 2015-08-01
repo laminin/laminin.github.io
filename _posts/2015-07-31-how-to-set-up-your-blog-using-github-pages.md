@@ -12,7 +12,7 @@ tags:
  - github-pages
 ---
 
-I always wanted to create my own blog and publish it on any server, but i didnt know where to start?, how to start?. Recently i heard about *Jekyll* and *GitHub-Pages* then i gave it a try, it turned out very easy, hence i am writing  **How to setup your own blog using github pages and Jekyll**  
+I have always wanted to create my own blog and publish it on any server, but i didnt know where to start?, how to start?. Recently i heard about *Jekyll* and *GitHub-Pages* then i gave it a try, it turned out very easy, hence i am writing  **How to setup your own blog using github pages and Jekyll**  
 
 <ins>Step 1:</ins>
 Create a User or Organization site from [github-pages.](https://pages.github.com/) Do not use project site.

@@ -79,7 +79,7 @@ we write the output of sed to a new file called Config1.java and remove the curr
 
 then rename Config1 file as Config
 
-_</ins>4. Cleaning the build.</ins>_
+_<ins>4. Cleaning the build.</ins>_
 
 {% highlight sh %}
 if [ -d app/build ]

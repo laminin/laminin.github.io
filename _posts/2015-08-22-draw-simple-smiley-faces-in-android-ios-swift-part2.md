@@ -644,6 +644,17 @@ class FaceView: UIView {
 
 {% endhighlight %}
 
+
+__Get the source code__
+
+You can clone this project form [github](https://github.com/Franklin2412/smiley-part1)
+
+or clone the project using following command.
+
+{% highlight sh %}
+  git clone git@github.com:Franklin2412/smiley-part1.git
+{% endhighlight %}
+
 [0]: http://laminin.github.io/draw/smiley/2015/08/15/draw-simple-smiley-faces-in-android-ios-swift-part1/
 [1]: https://developer.android.com/training/gestures/index.html
 [2]: https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIPanGestureRecognizer_Class/

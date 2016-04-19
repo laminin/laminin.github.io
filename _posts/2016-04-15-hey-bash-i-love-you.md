@@ -14,10 +14,10 @@ tags:
 
 ### About me :-
 
-I  am from Chenapalli, it is a beautiful village located ~70km far from Kanyakumari. I came to north India three years back for my carrier. Presently (8-April-2016) i am in Gurgaon (~2800 km distance). Once or twice a year i go to my home. Every time i go, i bring something to my family individuals. So far i have not given anything to my lovely mom. So this time (2016 Easter holidays) i planned to surprise her with a android phone, hence I bought a Moto G3 for her.
+I  am from Chenapalli, it is a beautiful village located ~70km from Kanyakumari. I came to north India three years back for my carrier. Presently (8-April-2016) i am in Gurgaon (~2800 km distance). Once or twice a year i go to my home. Every time i go, i bring something to my family individuals. So far i have not given anything to my lovely mom. So this time (2016 Easter holidays) i decided to surprise her with a android phone, hence I bought a Moto G3.
 
 ### Planning to convince my mom to use Moto G3 :-
-I know if i give this phone to her she is not going to accept it. Even if she accepts, she is not going to use it. Last year we gave a button phone she is not using it now. She does not feed it, does not make any call, rarely accepts any call, does not check call history, sms, etc. When i asked her why are you not using it, she answered, i don't have time to do all this. I know life in village is quite busy, whole day is not just enough to take care of the family, farms, and animals. I do agree with her, So i decided to convince her by giving this phone with something she likes and she can make use of it while doing other works. She is very pious and so fond of Christian songs. So i bought a 32GB Scandisk memory card(though Moto G3 has 16GB internal) and wanted to fill it with tamil christian songs.
+I know if i give this phone to her, she is not going to accept it. Even if she accepts, she is not going to use it. Last year we gave a button phone she is not using it now. She does not feed it, does not make any call, rarely accepts any call, does not check call history, sms, etc. When i asked her why are you not using it, she answered, i don't have time to do all this. I know life in village is quite busy, whole day is not just enough to take care of the family, farms, and animals. I do agree with her, So i decided to convince her by giving this phone with something she likes and she can make use of it while doing other works. She is very pious and so fond of Christian songs. So i bought a 32GB Scandisk memory card(though Moto G3 has 16GB internal) and wanted to fill it with tamil christian songs.
 
 ### About my songs collections :-
 
@@ -44,7 +44,7 @@ I googled for downloading a playlist from youtube. I came across [youtube-dl][2]
 It started downloading the channel. The problem was my internet. My internet connection was not so good. Average download speed was 70Kb/s. By default youtube-dl downloaded the best available format and i wanted the best format. Average size of each song was 30Mb. I knew it will take weeks may be months to download the entire channel. First day was good, i think it downloaded around 100 songs. I wanted to give some rest to my system. I killed youtube-dl and shutdown my system.
 
 Next day i ran the same command and it parse the playlist again and went through each downloaded songs and if it
-found any song was partially downloaded, it completed the partial files and went ahead. It took few minutes to start downloading the new song (actually 101st songs). I thought it was ok because it did not download any song for the second time but resumed the partially download files. This day i downloaded another 100 songs. I thought of giving some rest to my system. I killed youtube-dl and shutdown my system. It was fine till it reached 500 songs. After 500 songs when i ran the command to download the songs again it took a lot of time to reach the new download. It ran through all the indexes and compared with the downloaded songs in the folder.
+found any song was partially downloaded, it completed the partial files and went ahead. It took few minutes to start downloading the new song (actually 101st songs). I thought it was ok because it did not download any song for the second time but resumed the partially download files. Second day it downloaded another 100 songs. I thought of giving some rest to my system. I killed youtube-dl and shutdown my system. It was fine till it reached 500 songs. After 500 songs when i ran the command to download the songs again it took a lot of time to reach the new download. It ran through all the indexes and compared with the downloaded songs in the folder.
 
 #### Simple solution - Don't let youtube-dl die :-
 
@@ -83,7 +83,7 @@ There we go, in no time it wrote all the ids of all downloaded songs in download
     youtube-dl --download-archive downloaded.txt -cita toDownload.txt
 {% endhighlight %}
 
-Here downloaded.txt file has all the youtube id's and toDownload.txt has the youtube channel's URL. In few weeks, i downloaded the complete channel. I follow this channel, if any new upload i run the same command and it downloads the new song. This is how i have been collecting songs from youtube.
+Here downloaded.txt file has all the youtube ids and toDownload.txt has the youtube channel's URL. In few weeks, i downloaded the complete channel. I follow this channel, if any new upload i run the same command and it downloads the new song. This is how i have been collecting songs from youtube.
 
 ### youtube-dl in android:-
 
@@ -114,7 +114,7 @@ youtube-dl --download-archive /sdcard/pious/tamilChristianSongs/downloaded.txt -
 
 ### My songs collection:-
 
-Currently i have ~400GB songs in Tamil, English, Malayalam, Hebrew(mostly Messanic) and Hindi in my external Hard drive. These songs include .mp3, .mp4, .avi, .vob, .DAT, .wma, .webm, .mkv file formats. I use VLC media player in my Mac, which plays all the formats without any problem.
+Currently i have ~400GB songs in Tamil, English, Malayalam, Hebrew(mostly Messanic) and Hindi in my external Hard drive. These songs include .mp3, .mp4, .avi, .vob, .DAT, .wma, .webm, .mkv file formats. I use VLC media player in my system, which plays all the formats without any problem.
 
 ### My Tamil songs collection:-
 
@@ -217,26 +217,26 @@ One folder had songs title with "tamil keerthanaigal collections" tried to remov
 for f in *; do mv "$f" "${f/ \(tamil keerthanaigal collections\)\-/}"; done
 {% endhighlight %}
 
-Thats all, almost renaming part was done for mp3. Applied the same for videos. The audio collections were named as as track1, track2, etc. Old video songs were named ad mpeg01.DAT, mpeg02.DAT, etc. I had to play the songs and change the titles manually.
+Thats all, renaming part was done for mp3. Applied the same for videos. The audio collections were named as as track1, track2, etc. Old video songs were named ad AVSEQ01.DAT, AVSEQ02.DAT, etc. I had to play the songs and change the titles manually.
 
 At this point of time i was able to identify duplicate files easily just by sorting. And i removed most of the duplicate files.
 
 ### Converting file formats to save memory:-
 
-Now i have huge collection of songs with proper names. Only problem was is memory. I wanted to convert the file formats. There were some video files with a static image(s). Basically they were .mp4 or .mkv files with static images. I wanted to convert them as .mp3 to save some memory. I googled sometime, found [ffmpeg][7] and [libmp3lame][8] will do the magic. Collected all such files and .wma files in one folder and ran the following script.
+Now i have huge collection of songs with proper names. Only problem was memory. I wanted to convert the file formats. There were some video files with a static image(s). Basically they were .mp4 or .mkv files with static images. I wanted to convert them as .mp3 to save some memory. I googled sometime, found [ffmpeg][7] and [libmp3lame][8] will do the magic. Collected all such files and .wma files in one folder and ran the following script.
 
 {% highlight sh %}
 # convert any format to mp3.
 # for f in *;do ffmpeg -i "$f" -acodec libmp3lame -ab 128k "${f}.mp3"; done
 {% endhighlight %}
 
-This is the end of mp3.
+It converted all the files in the current directory to .mp3 and this is the end of mp3.
 
 ### Problems while dealing with video files:-
 
 1. I have not installed any extra app to play video in my mom's Moto G3, i tried to play a .mkv file and the device complained it could not play the song. (assuming it wont play .mov, .vob, .DAT, .webm files)
 2. I tried to play some hd .mp4 songs, though the video was playing could not hear any audio. I did not happen for                all files.
-3. I always download the best available format (by default youtube-dl downloads best available). Most of the songs come around 100Mb. The mobile device screen size is very small comparing with desktop. I want to convert all the songs to 400x200 screen size no mater what actual size(480 or 720 or 1080) is.
+3. I always download the best available format (by default youtube-dl downloads best available). Most of the songs come around 100Mb. The mobile device screen size is very small comparing with desktop. I want to convert all the songs to mobile screen size(400x200 - best fit for 5" screen), no mater what actual size(480 or 720 or 1080) is.
 
 To fix all the above problems i just had to run one command.
 {% highlight sh %}
@@ -244,7 +244,7 @@ To fix all the above problems i just had to run one command.
 for f in *;do ffmpeg -y -i "$f" -s 400x240 -vcodec libx264 -acodec libvo_aacenc -b:a 92k "${f}.mp4"; done
 {% endhighlight %}
 
-I know its gonna take a lot of time to complete this. I ran this script one night and slept. Next morning everything was ready. I had to remove the trailing seven characters and append mp4 with each file. (script explained above).
+I know it is going to take a lot of time to complete this. I ran this script one night and slept. Next morning everything was ready. I had to remove the trailing seven characters and append mp4 with each file. (script explained above).
 
 ### Mission complete:-
 
@@ -266,7 +266,7 @@ Then i transfered the songs to Mobile.
   adb push /source/ /sdcard/destination/
 {% endhighlight %}
 
-A 32 Gb memory card was more than enough to contain all the tamil songs i have been collecting for ten+ year!.
+A 32 Gb memory card was more than enough to contain all the tamil christian songs i have been collecting for ten+ year!.
 
 ### file_name_converter.sh file:-
 
@@ -354,13 +354,13 @@ I reached my home, showed Moto G3 to my Dad and Mom. They told , "yeah it is a n
 
 ### Happiness is helping my parents to use android phone :-
 
-Immediately i taught her to unlock the phone, navigate to apps screen, open music player app and play the songs. After two three attempts playing a mp3 song was a piece of cake for her. Next day i went to my Grandma home, when i came back my mom told me, "I was playing the songs, one song was really really good, so i paused the song at the end, i want to hear the song again". Hurray! Success!, I wanted to teach her about file explorer or Music player's view songs options, but i felt it might confuse her. So i told her mom i will teach those once you familiar with android. Then i taught her  to play video songs, making a call from contacts, receiving a call. She kept trying all four apps and  became very comfortable. After the holidays i came back to work. Everyday when we talk i ask her about the phone and songs. She says she listen the songs, mostly the video songs. I am so happy that she started using android phone.
+Immediately i taught her to unlock the phone, navigate to apps screen, open music player app and play the songs. After two three attempts playing a mp3 song was a piece of cake for her. Next day i went to my Grandma home, when i came back my mom told me, "I was playing the songs, one song was really really good, so i paused the song at the end, i want to hear the song again". Hurray! Success!, I wanted to teach her about file explorer or Music player's view songs options, but i felt it might confuse her. So i told her, "mom i will teach them once you familiar with android". Then i taught her  to play video songs, making a call from contacts, receiving a call. She kept trying all four apps and  became very comfortable. After the holidays i came back to work. Everyday when we talk i ask her about the phone and songs. She says she listen the songs, mostly the video songs. I am so happy that she started using android phone.
 
 ### Thank you guys:-
 Thanks to bash, youtube-dl and ffmpeg. Without these tools it would have taken a lot of time to complete. After spending some good time with bash i feel bash is slim, easy to use, each command just does what it suppose to do, provides loads of utility and flags, provides native access to system level informations and configurations. Hey BASH you saved me a lot of time, and i love you, seriously __I LOVE YOU!.__
 
 ### Special Thanks:-
-At this very moment i thank everyone who shared their song collections with me. Some of them shared songs even before i heard about youtube!.
+At this very moment i thank everyone(some names mentioned bellow) who shared their song collections with me. Some of them shared songs even before i heard about youtube!.
 
  Anila Mary<br>
  Anish John<br>
@@ -370,7 +370,7 @@ At this very moment i thank everyone who shared their song collections with me. 
  Benjamin<br>
  Edberg John<br>
  Hubert Jeno<br>
- Jasmine Shara<br>
+ Jasmine Sarah<br>
  Minu Prince<br>
  Sudhar<br>
  Sylvia Jennifer<br>

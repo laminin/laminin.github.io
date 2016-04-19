@@ -87,7 +87,7 @@ Here downloaded.txt file has all the youtube ids and toDownload.txt has the yout
 
 ### youtube-dl in android:-
 
-My post paid mobile plan includes 1GB 3G data. I was looking for a option to download youtube video from my android phone as well. I tried few application from playstore to download youtube songs. I felt no app was as good as youtube-dl. I wanted to use youtube-dl in mobile. I was looking for terminal app android.
+My post paid mobile plan includes 1GB 3G data. I was looking for an option to download youtube video from my android phone as well. I tried few application from playstore to download youtube songs. I felt no app was as good as youtube-dl. I wanted to use youtube-dl in mobile. I was looking for terminal app android.
 
 #### Termux:-
 

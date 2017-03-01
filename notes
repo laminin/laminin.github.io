@@ -1,0 +1,17 @@
+1. Android canvas
+2. debugging if else
+    boolean a = true;
+    boolean b = true;
+    if(a && !b){
+      // a && !b
+    } else if (!a && !b){
+      // !a && !b
+    }
+3. Exploiting java
+//  int j = 0;
+//        for (int i=0; i<100; i++){
+//            j = j++;
+//        }
+//        Log.d("franklin", "j = " + j);
+
+4. Puzzle.
